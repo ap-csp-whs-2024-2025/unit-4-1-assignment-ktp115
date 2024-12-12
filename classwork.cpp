@@ -30,5 +30,9 @@ int main()
             << mult_xy << "\n"
             << div_xy << "\n"
             << mod_xy << "\n";
+    int z = 10;
+    std::cout << "x > z: " << (x>z) << "\n"
+              << "y > x: " << (y<z) << "\n";
+
   return 0;
 }
