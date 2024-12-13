@@ -3,16 +3,8 @@
 
 int main()
 {
-  int age = 17;
-  double price = 19.99;
-  bool isRaining = false;
   // "\n" and "std::endl" = a new line
   // "std::cout" computer output
-  std::cout << age << "\n" << price << std::endl << isRaining <<"\n";
-
-  int grade = 11;
-  std::cout << "I am an" << " " << grade << "th grader." <<"\n";
-
   // "std::string" string
   std::string name = "Katie";
   std::cout << "My name is " << name << "\n";
@@ -33,6 +25,41 @@ int main()
     int z = 10;
     std::cout << "x > z: " << (x>z) << "\n"
               << "y > x: " << (y<z) << "\n";
+
+  // exercise 2
+  bool isSunny = true;
+  bool hasUmbrella = false;
+  std::cout << "isSunny && hasUmbrella: " << (isSunny && hasUmbrella) << "\n";
+  std::cout << "isSunny || hasUmbrella: " << (isSunny || hasUmbrella) << "\n";
+  std::cout << "!isSunny: " << (!isSunny) << "\n";
+  std::cout << "!isSunny && !hasUmbrella: " << (!isSunny && !hasUmbrella) << "\n";
+  
+  // exercise 3
+  int n = 7;
+  double m = 4.0;
+  bool hasLicense = false;
+  std::cout << "n>m: " << (n>m) << "\n";
+  std::cout << "m==4.0: " << (m==4.0) << "\n";
+  std::cout << "hasLicense && m<=n: " << (hasLicense && m<=n) << "\n";
+  std::cout << "n>5 && !hasLicense: " << (n>5 && !hasLicense) << "\n";
+
+  // exercise 4
+  int age = 18;
+  double height = 5.9;
+  bool isStudent = true;
+  std::string city = "New York";
+  std::cout << "Birth year: " << 2024 - age << "\n";
+  std::cout << "Adult: " << (age>=18) << "\n";
+  std::cout << "Over 6 ft: " << (height>6) << "\n";
+  std::cout << "student & living in NY: " << (isStudent && city=="New York") << "\n";
+
+  //bonus
+  int i = 50;
+  double d = 100.5;
+  bool flag = false;
+  std::cout << "i%5 && d>50: " << (i%5==0 && d>50) << "\n";
+  std::cout << "d<=100 || flag: " << (d<=100 && flag) <<"\n";
+  std::cout << "!flag && i > 30: " << (!flag && i>30) << "\n";
 
   return 0;
 }
